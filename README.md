@@ -98,10 +98,9 @@ Located at **frontend/src/pages/RoomPage.jsx**, this component handles the main 
 **users:** List of users in the room.
 **setUsers:** Function to set the users state.
 ## Routes
-> /
+` / `
 The root route renders the Forms component, which includes the CreateRoomForm.
-
-> /:roomId
+` /:roomId `
 The dynamic route for a specific room renders the room interface, including the video grid and the RoomPage component.
 
 **Socket.IO**
