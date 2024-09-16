@@ -1,3 +1,46 @@
+# Collaborative Whiteboard
+
+This project is a collaborative whiteboard application that allows multiple users to join a room, share their video streams, and collaborate in real-time. The application is built using React, Socket.IO, and PeerJS.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Components](#components)
+- [Routes](#routes)
+- [Socket.IO](#socketio)
+- [PeerJS](#peerjs)
+- [License](#license)
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/collaborative-whiteboard.git
+    cd collaborative-whiteboard
+    ```
+
+2. Install the dependencies:
+    ```sh
+    npm install
+    ```
+
+3. Start the development server:
+    ```sh
+    npm start
+    ```
+
+## Usage
+
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Create a new room by entering your name and clicking the "Create Room" button.
+3. Share the generated room ID with other users to allow them to join the room.
+4. Collaborate in real-time with video streams and whiteboard features.
+
+## Project Structure
+frontend/ ├── public/ ├── src/ │ ├── components/ │ │ └── Forms/ │ │ └── CreateRoomForm/ │ │ └── index.jsx │ ├── pages/ │ │ └── RoomPage.jsx │ ├── App.jsx │ ├── App.css │ └── index.js └── package.json
+
 ## Components
 
 ### `CreateRoomForm`
