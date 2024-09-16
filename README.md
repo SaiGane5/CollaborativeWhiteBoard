@@ -69,7 +69,7 @@ To set up the project locally, follow these steps:
 Frontend: [vercel Deployment](https://collaborative-white-board-bice.vercel.app)
 Backend: [Render Deployment](https://collaborativewhiteboard.onrender.com)
 ### Working Video
-Drive Link to Working Video
+[Drive Link to Working Video](https://drive.google.com/file/d/18XPjdBf3K6Ag-H8KKBwbIao-4OCv9TwJ/view?usp=sharing)
 
 ### Components 
 
