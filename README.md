@@ -39,7 +39,19 @@ This project is a collaborative whiteboard application that allows multiple user
 4. Collaborate in real-time with video streams and whiteboard features.
 
 ## Project Structure
-frontend/ ├── public/ ├── src/ │ ├── components/ │ │ └── Forms/ │ │ └── CreateRoomForm/ │ │ └── index.jsx │ ├── pages/ │ │ └── RoomPage.jsx │ ├── App.jsx │ ├── App.css │ └── index.js └── package.json
+frontend/ 
+├── public/
+├── src/ 
+│ ├── components/
+│ │ └── Forms/ 
+│ │ └── CreateRoomForm/ 
+│ │ └── index.jsx 
+│ ├── pages/ 
+│ │ └── RoomPage.jsx 
+│ ├── App.jsx 
+│ ├── App.css 
+│ └── index.js 
+└── package.json
 
 ## Components
 
