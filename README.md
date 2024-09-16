@@ -66,8 +66,8 @@ To set up the project locally, follow these steps:
 1. Open your browser and navigate to http://localhost:3000 to access the frontend.
 2. The backend server will be running on http://localhost:5000.
 ### Deployment Links
-Frontend: vercel Deployment
-Backend: Render Deployment
+Frontend: [vercel Deployment](https://collaborative-white-board-bice.vercel.app)
+Backend: [Render Deployment](https://collaborativewhiteboard.onrender.com)
 ### Working Video
 Drive Link to Working Video
 
@@ -98,10 +98,10 @@ Located at **frontend/src/pages/RoomPage.jsx**, this component handles the main 
 **users:** List of users in the room.
 **setUsers:** Function to set the users state.
 ## Routes
-* /
+> /
 The root route renders the Forms component, which includes the CreateRoomForm.
 
-/:roomId
+> /:roomId
 The dynamic route for a specific room renders the room interface, including the video grid and the RoomPage component.
 
 **Socket.IO**
