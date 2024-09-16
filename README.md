@@ -1,100 +1,123 @@
-# Collaborative Whiteboard
+# Collaborative Whiteboard Project
 
-This project is a collaborative whiteboard application that allows multiple users to join a room, share their video streams, and collaborate in real-time. The application is built using React, Socket.IO, and PeerJS.
+## Project Explanation
+The Collaborative Whiteboard project is a real-time application that allows multiple users to draw and interact on a shared whiteboard. This project leverages WebSockets for real-time communication and includes features such as user authentication, video conferencing, and collaborative drawing.
 
-## Table of Contents
+## Tech Stacks Used
+- **Frontend:**
+  - React
+  - React Router
+  - Socket.IO
+  - Bootstrap
+  - React Toastify
+- **Backend:**
+  - Node.js
+  - Express
+  - Socket.IO
+- **Deployment:**
+  - Render (for backend)
+  - Netlify (for frontend)
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Components](#components)
-- [Routes](#routes)
-- [Socket.IO](#socketio)
-- [PeerJS](#peerjs)
-- [License](#license)
+## Team Contributions
+- **Member 1:**
+  - Implemented the frontend components and routing.
+  - Integrated Socket.IO for real-time communication.
+  - Styled the application using Bootstrap and custom CSS.
+- **Member 2:**
+  - Developed the backend server using Node.js and Express.
+  - Set up WebSocket connections and handled server-side events.
+  - Deployed the backend on Render.
+- **Member 3:**
+  - Worked on user authentication and session management.
+  - Integrated video conferencing features using WebRTC.
+  - Deployed the frontend on Netlify.
 
-## Installation
+## Local Setup Instructions
+To set up the project locally, follow these steps:
 
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Backend Setup
 1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/collaborative-whiteboard.git
-    cd collaborative-whiteboard
-    ```
+   ```bash
+   git clone https://github.com/yourusername/collaborative-whiteboard.git
+   cd collaborative-whiteboard/backend
+Copy
+Insert
 
-2. Install the dependencies:
-    ```sh
-    npm install
-    ```
+Install dependencies:
+npm install
+Copy
+Insert
 
-3. Start the development server:
-    ```sh
-    npm start
-    ```
+Start the backend server:
+npm start
+Copy
+Insert
 
-## Usage
+Frontend Setup
+Navigate to the frontend directory:
+cd ../frontend
+Copy
+Insert
 
-1. Open your browser and navigate to `http://localhost:3000`.
-2. Create a new room by entering your name and clicking the "Create Room" button.
-3. Share the generated room ID with other users to allow them to join the room.
-4. Collaborate in real-time with video streams and whiteboard features.
+Install dependencies:
+npm install
+Copy
+Insert
 
-## Project Structure
-frontend/ </br>
-├── public/</br>
-├── src/</br>
-│ ├── components/</br>
-│ │ └── Forms/</br>
-│ │ └── CreateRoomForm/</br> 
-│ │ └── index.jsx</br>
-│ ├── pages/</br>
-│ │ └── RoomPage.jsx</br>
-│ ├── App.jsx</br>
-│ ├── App.css</br>
-│ └── index.js</br>
-└── package.json</br>
+Start the frontend development server:
+npm start
+Copy
+Insert
 
-## Components
+Accessing the Application
+Open your browser and navigate to http://localhost:3000 to access the frontend.
+The backend server will be running on http://localhost:5000.
+Deployment Links
+Frontend: Netlify Deployment
+Backend: Render Deployment
+Working Video
+Drive Link to Working Video
+Additional Projects
+If you have solved more than one problem statement, include links to the additional projects here.
 
-### `CreateRoomForm`
-
-Located at `frontend/src/components/Forms/CreateRoomForm/index.jsx`, this component is responsible for creating a new room and initializing the PeerJS connection.
-
-Props:
-- `uuid`: Function to generate a unique room ID.
-- `socket`: Socket.IO client instance.
-- `setUser`: Function to set the user state.
-- `setMyPeer`: Function to set the PeerJS instance.
-
-### `RoomPage`
-
-Located at `frontend/src/pages/RoomPage.jsx`, this component handles the main room functionality, including connecting to new users and managing video streams.
+Project 2: GitHub Repository
+Working Video: Drive Link to Working Video
+CreateRoomForm
+Located at frontend/src/components/Forms/CreateRoomForm/index.jsx, this component is responsible for creating a new room and initializing the PeerJS connection.
 
 Props:
-- `connectToNewUser`: Function to connect to a new user.
-- `addVideoStream`: Function to add a video stream to the video grid.
-- `videoGrid`: Ref to the video grid element.
-- `user`: Current user state.
-- `myPeer`: PeerJS instance.
-- `setPeers`: Function to set the peers state.
-- `socket`: Socket.IO client instance.
-- `users`: List of users in the room.
-- `setUsers`: Function to set the users state.
 
-## Routes
+uuid: Function to generate a unique room ID.
+socket: Socket.IO client instance.
+setUser: Function to set the user state.
+setMyPeer: Function to set the PeerJS instance.
+RoomPage
+Located at frontend/src/pages/RoomPage.jsx, this component handles the main room functionality, including connecting to new users and managing video streams.
 
-### `/`
+Props:
 
-The root route renders the `Forms` component, which includes the `CreateRoomForm`.
+connectToNewUser: Function to connect to a new user.
+addVideoStream: Function to add a video stream to the video grid.
+videoGrid: Ref to the video grid element.
+user: Current user state.
+myPeer: PeerJS instance.
+setPeers: Function to set the peers state.
+socket: Socket.IO client instance.
+users: List of users in the room.
+setUsers: Function to set the users state.
+/
+The root route renders the Forms component, which includes the CreateRoomForm.
 
-### `/:roomId`
+/:roomId
+The dynamic route for a specific room renders the room interface, including the video grid and the RoomPage component.
 
-The dynamic route for a specific room renders the room interface, including the video grid and the `RoomPage` component.
+Socket.IO
+The application uses Socket.IO for real-time communication between the server and clients. The Socket.IO client is initialized in frontend/src/App.jsx with the following configuration:
 
-## Socket.IO
-
-The application uses Socket.IO for real-time communication between the server and clients. The Socket.IO client is initialized in `frontend/src/App.jsx` with the following configuration:
-
-```jsx
 const server = "https://collaborativewhiteboard.onrender.com/";
 const connectionOptions = {
   "force new connection": true,
