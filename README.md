@@ -41,16 +41,16 @@ This project is a collaborative whiteboard application that allows multiple user
 ## Project Structure
 frontend/ </br>
 ├── public/</br>
-├── src/ </br>
+├── src/</br>
 │ ├── components/</br>
-│ │ └── Forms/ </br>
+│ │ └── Forms/</br>
 │ │ └── CreateRoomForm/</br> 
-│ │ └── index.jsx </br>
-│ ├── pages/ </br>
-│ │ └── RoomPage.jsx </br>
-│ ├── App.jsx </br>
-│ ├── App.css </br>
-│ └── index.js </br>
+│ │ └── index.jsx</br>
+│ ├── pages/</br>
+│ │ └── RoomPage.jsx</br>
+│ ├── App.jsx</br>
+│ ├── App.css</br>
+│ └── index.js</br>
 └── package.json</br>
 
 ## Components
